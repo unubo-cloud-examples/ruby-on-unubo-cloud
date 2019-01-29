@@ -4,5 +4,5 @@ require "sinatra"
 $stdout.sync = true
 
 get "/" do
-  "Welcome to Ruby on Unubo Cloud"
+  send_file 'index.html'
 end
