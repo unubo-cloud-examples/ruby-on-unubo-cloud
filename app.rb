@@ -1,8 +1,7 @@
-require "socket"
-require "sinatra"
+require 'sinatra'
 
-$stdout.sync = true
+set :bind, '0.0.0.0'
 
-get "/" do
+get '/' do
   send_file 'index.html'
 end
